@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Case File 01 — The Friday Afternoon Incident</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to case file</a>
+
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">AP CYBERSECURITY • UNIT 1 INVESTIGATION</p>
+      <h1>Case File 01: The Friday Afternoon Incident</h1>
+      <p class="subhead">A school security team has received several suspicious reports. Determine what the evidence supports — and what still needs verification.</p>
+    </div>
+    <div class="status-box" aria-label="Case status">
+      <span class="status-dot"></span>
+      <div>
+        <strong>STATUS: ACTIVE</strong>
+        <small>Initial triage in progress</small>
+      </div>
+    </div>
+  </header>
+
+  <nav class="case-nav" aria-label="Case sections">
+    <button class="nav-btn active" data-target="briefing">Briefing</button>
+    <button class="nav-btn" data-target="evidence">Evidence Locker</button>
+    <button class="nav-btn" data-target="timeline">Timeline</button>
+    <button class="nav-btn" data-target="response">Response Desk</button>
+  </nav>
+
+  <main id="main">
+    <section id="briefing" class="panel section-panel active-panel" tabindex="-1">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">CASE BRIEFING</p>
+          <h2>Your Assignment</h2>
+        </div>
+        <span class="badge">Junior Security Analyst</span>
+      </div>
+
+      <div class="brief-grid">
+        <article class="card hero-card">
+          <h3>What happened?</h3>
+          <p>At approximately <strong>2:30 PM on Friday</strong>, school staff and students began reporting suspicious messages and unusual account activity. The technology team does not yet know whether all of the reports are connected.</p>
+          <p>Your team has been given the available incident evidence. Analyze it carefully before deciding what you think occurred.</p>
+        </article>
+
+        <article class="card">
+          <h3>Questions your team must answer</h3>
+          <ul class="check-list">
+            <li>What facts are directly supported by the evidence?</li>
+            <li>What conclusions are likely, but not yet proven?</li>
+            <li>Which events may be unrelated?</li>
+            <li>What should the school do immediately?</li>
+            <li>What should investigators verify next?</li>
+          </ul>
+        </article>
+
+        <article class="card warning-card">
+          <h3>Analyst rule</h3>
+          <p><strong>Do not force every clue into one story.</strong> Some artifacts may support the same attack chain. Others may be unrelated, ambiguous, or incomplete.</p>
+        </article>
+
+        <article class="card">
+          <h3>Evidence standard</h3>
+          <div class="confidence-grid">
+            <div><strong>KNOWN</strong><span>Directly supported</span></div>
+            <div><strong>LIKELY</strong><span>Strong inference</span></div>
+            <div><strong>POSSIBLE</strong><span>Plausible, weak support</span></div>
+            <div><strong>VERIFY</strong><span>More evidence needed</span></div>
+          </div>
+        </article>
+      </div>
+
+      <button class="primary-action" data-go="evidence">Open the Evidence Locker →</button>
+    </section>
+
+    <section id="evidence" class="panel section-panel" tabindex="-1">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">EVIDENCE LOCKER</p>
+          <h2>10 Available Artifacts</h2>
+          <p class="muted">Open each item. Record observations before deciding what they mean.</p>
+        </div>
+        <div class="progress-wrap" aria-live="polite">
+          <span id="progressText">0 / 10 reviewed</span>
+          <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        </div>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter artifacts">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="message">Messages</button>
+        <button class="filter-btn" data-filter="account">Account Activity</button>
+        <button class="filter-btn" data-filter="statement">Statements</button>
+        <button class="filter-btn" data-filter="network">Network</button>
+        <button class="filter-btn" data-filter="ai">AI Analysis</button>
+      </div>
+
+      <div id="artifactGrid" class="artifact-grid"></div>
+    </section>
+
+    <section id="timeline" class="panel section-panel" tabindex="-1">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">TIMELINE</p>
+          <h2>Reported Events</h2>
+          <p class="muted">The timeline shows when evidence was recorded. Timing alone does not prove that events are connected.</p>
+        </div>
+      </div>
+      <div id="timelineList" class="timeline"></div>
+    </section>
+
+    <section id="response" class="panel section-panel" tabindex="-1">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">RESPONSE DESK</p>
+          <h2>Prepare Your Security Briefing</h2>
+        </div>
+      </div>
+
+      <div class="brief-grid">
+        <article class="card">
+          <h3>1. Executive Summary</h3>
+          <p>State what you believe happened and how serious the incident is. Separate confirmed facts from inference.</p>
+        </article>
+        <article class="card">
+          <h3>2. Timeline</h3>
+          <p>Identify the key events in order. Cite artifact numbers that support each step.</p>
+        </article>
+        <article class="card">
+          <h3>3. Evidence & Findings</h3>
+          <p>Explain your strongest evidence. Classify major conclusions as known, likely, possible, or needing verification.</p>
+        </article>
+        <article class="card">
+          <h3>4. Attack Chain</h3>
+          <p>Show how the incident may have progressed. Do not include a step unless you can support it with evidence.</p>
+        </article>
+        <article class="card">
+          <h3>5. Response Plan</h3>
+          <p>Separate actions for the <strong>first 15 minutes</strong> from longer-term prevention and policy changes.</p>
+        </article>
+        <article class="card">
+          <h3>6. AI + Human Judgment</h3>
+          <p>Evaluate the automated incident analysis. Identify what it gets right, what it assumes, and what humans still need to verify.</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Presentation standard:</strong> Every important claim should point back to evidence. Be ready to answer, “What evidence supports that?”
+      </div>
+    </section>
+  </main>
+
+  <dialog id="artifactDialog" class="artifact-dialog">
+    <form method="dialog" class="dialog-shell">
+      <div class="dialog-head">
+        <div>
+          <p id="dialogLabel" class="section-kicker"></p>
+          <h2 id="dialogTitle"></h2>
+        </div>
+        <button class="close-btn" aria-label="Close artifact">×</button>
+      </div>
+      <div id="dialogMeta" class="dialog-meta"></div>
+      <div id="dialogContent" class="artifact-content"></div>
+      <div class="dialog-foot">
+        <p>Record what you <strong>observe</strong> before deciding what you think it means.</p>
+        <button id="markReviewed" type="button" class="secondary-action">Mark as reviewed</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer>
+    <span>AP Cybersecurity • Unit 1 Investigation</span>
+    <span>Fictional case for classroom use</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
