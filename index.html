@@ -16,20 +16,13 @@
       <h1>Case File 01: The Friday Afternoon Incident</h1>
       <p class="subhead">A school security team has received several suspicious reports. Determine what the evidence supports — and what still needs verification.</p>
     </div>
-    <div class="status-box" aria-label="Case status">
-      <span class="status-dot"></span>
-      <div>
-        <strong>STATUS: ACTIVE</strong>
-        <small>Initial triage in progress</small>
-      </div>
-    </div>
   </header>
 
   <nav class="case-nav" aria-label="Case sections">
     <button class="nav-btn active" data-target="briefing">Briefing</button>
     <button class="nav-btn" data-target="evidence">Evidence Locker</button>
     <button class="nav-btn" data-target="timeline">Timeline</button>
-    <button class="nav-btn" data-target="response">Response Desk</button>
+    <button class="nav-btn" data-target="response">Investigation Guide</button>
   </nav>
 
   <main id="main">
@@ -71,7 +64,7 @@
             <div><strong>KNOWN</strong><span>Directly supported</span></div>
             <div><strong>LIKELY</strong><span>Strong inference</span></div>
             <div><strong>POSSIBLE</strong><span>Plausible, weak support</span></div>
-            <div><strong>VERIFY</strong><span>More evidence needed</span></div>
+            <div><strong>NOT ENOUGH EVIDENCE</strong><span>More evidence needed</span></div>
           </div>
         </article>
       </div>
@@ -118,40 +111,44 @@
     <section id="response" class="panel section-panel" tabindex="-1">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">RESPONSE DESK</p>
-          <h2>Prepare Your Security Briefing</h2>
+          <p class="section-kicker">INVESTIGATION GUIDE</p>
+          <h2>Complete Your Team Worksheet</h2>
+          <p class="muted">Work in groups of 2 or 3. Discuss each part, agree on your reasoning, and record your answers on the worksheet. Cite specific artifact numbers.</p>
         </div>
       </div>
 
       <div class="brief-grid">
         <article class="card">
-          <h3>1. Executive Summary</h3>
-          <p>State what you believe happened and how serious the incident is. Separate confirmed facts from inference.</p>
+          <h3>1. What Happened?</h3>
+          <p>Choose the <strong>5 most important artifacts</strong>. Record what each shows and what it might mean. Connect two artifacts and explain their relationship.</p>
         </article>
         <article class="card">
-          <h3>2. Timeline</h3>
-          <p>Identify the key events in order. Cite artifact numbers that support each step.</p>
+          <h3>2. Known, Likely, or Possible?</h3>
+          <p>Use Known, Likely, Possible, or Not Enough Evidence to classify the worksheet's six claims about the fake login page, account compromise, coffee shop Wi-Fi, AI-generated payroll email, follow-up targeting, and parent voicemail. Support each classification with evidence.</p>
+          <p>Choose one claim that cannot be proven yet. What additional evidence would you want?</p>
         </article>
         <article class="card">
-          <h3>3. Evidence & Findings</h3>
-          <p>Explain your strongest evidence. Classify major conclusions as known, likely, possible, or needing verification.</p>
+          <h3>3. Reconstruct the Attack</h3>
+          <p>Complete the most likely chain: suspicious message &rarr; victim action &rarr; attacker gains &rarr; authentication activity &rarr; account access &rarr; follow-up activity.</p>
+          <p>Cite supporting artifacts for each step. Where could the attack most easily have been stopped, and why?</p>
         </article>
         <article class="card">
-          <h3>4. Attack Chain</h3>
-          <p>Show how the incident may have progressed. Do not include a step unless you can support it with evidence.</p>
+          <h3>4. Response</h3>
+          <p>Assume your team is called as soon as the suspicious login succeeds. Choose the <strong>3 most important immediate actions</strong> and <strong>2 longer-term improvements</strong> for the school. Explain which risk each immediate action addresses and why you recommend each improvement.</p>
         </article>
         <article class="card">
-          <h3>5. Response Plan</h3>
-          <p>Separate actions for the <strong>first 15 minutes</strong> from longer-term prevention and policy changes.</p>
+          <h3>5. AI + Human Judgment</h3>
+          <p>Review Artifact 10. Identify one conclusion the AI supports well and one where it is too confident. Explain your reasoning with evidence.</p>
+          <p>Why should a human analyst still review the AI's conclusions?</p>
         </article>
         <article class="card">
-          <h3>6. AI + Human Judgment</h3>
-          <p>Evaluate the automated incident analysis. Identify what it gets right, what it assumes, and what humans still need to verify.</p>
+          <h3>6. Final Incident Report</h3>
+          <p>Each student writes their own <strong>4&ndash;6 sentence report</strong> for the school's technology team. Explain what most likely happened, cite at least <strong>two artifact numbers</strong>, identify what remains uncertain or might be unrelated, and recommend what the school should do first and why.</p><p>Distinguish what you know from what you think is likely. Submit your individual report on <strong>MyViewPoint as a PDF</strong>.</p>
         </article>
       </div>
 
       <div class="callout">
-        <strong>Presentation standard:</strong> Every important claim should point back to evidence. Be ready to answer, “What evidence supports that?”
+        <strong>Before you finish:</strong> Check that your conclusions cite evidence and that every group member can explain your reasoning.
       </div>
     </section>
   </main>
@@ -182,3 +179,6 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
+
